@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager/screen/onboarding/loginScreen.dart';
+import 'package:task_manager/screen/onboarding/registrationScreen.dart';
 import 'package:task_manager/screen/onboarding/splashScreen.dart';
+import 'package:task_manager/screen/onboarding/emailVerifyScreen.dart'
+import 'package:task_manager/screen/onboarding/pinVerification.dart'
 
 
 
@@ -19,7 +22,11 @@ class MyApp extends StatelessWidget{
       routes: {
         '/':(context)=>splashScreen(),
         '/login':(context)=>loginScreen(),
-        '/registration':(context)=>
+        '/registration':(context)=>registrationScreen(),
+        '/emailVerify':(context)=>emailVerifyScreen(),
+        '/pinVerification':(context)=>pinVerificationScreen(),
+        'setPassword':(context)=>setPasswordScreen()
+       
       },
 
 

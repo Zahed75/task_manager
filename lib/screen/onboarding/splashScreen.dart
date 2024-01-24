@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 
+
+
 // statefull widget
-
-
 class splashScreen extends StatefulWidget {
   const splashScreen({Key? key}) : super(key: key);
 
@@ -14,8 +14,10 @@ class splashScreen extends StatefulWidget {
 class _splashScreenState extends State<splashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-     
+    return Scaffold(
+        body:Center(
+          child:Text("SplashScreen"),
+        )
       );
   
   }
