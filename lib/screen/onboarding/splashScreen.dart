@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
+import '../../style/style.dart';
 
-
-
-// statefull widget
 class splashScreen extends StatefulWidget {
   const splashScreen({Key? key}) : super(key: key);
 
@@ -15,10 +14,17 @@ class _splashScreenState extends State<splashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:Center(
-          child:Text("SplashScreen"),
-        )
-      );
-  
+      body: Stack(
+        children: [
+          ScreenBackground(context),
+          Container(
+            padding: EdgeInsets.all(30),
+            child: Center(
+                child: SvgPicture.asset("assets/images/bestlog.svg",alignment: Alignment.center)
+            ),
+          )
+        ],
+      ),
+    );
   }
 }

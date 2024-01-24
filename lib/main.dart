@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:task_manager/screen/onboarding/loginScreen.dart';
 import 'package:task_manager/screen/onboarding/registrationScreen.dart';
 import 'package:task_manager/screen/onboarding/splashScreen.dart';
-import 'package:task_manager/screen/onboarding/emailVerifyScreen.dart'
-import 'package:task_manager/screen/onboarding/pinVerification.dart'
+import 'package:task_manager/screen/onboarding/emailVerifyScreen.dart';
+import 'package:task_manager/screen/onboarding/pinVerification.dart';
+import 'package:task_manager/screen/onboarding/setPasswordScreen.dart';
 
 
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget{
         '/registration':(context)=>registrationScreen(),
         '/emailVerify':(context)=>emailVerifyScreen(),
         '/pinVerification':(context)=>pinVerificationScreen(),
-        'setPassword':(context)=>setPasswordScreen()
+        'setPassword':(context)=>setPasswordScreen(),
        
       },
 
