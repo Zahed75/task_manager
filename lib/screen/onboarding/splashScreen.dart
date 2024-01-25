@@ -11,6 +11,7 @@ class splashScreen extends StatefulWidget {
 }
 
 class _splashScreenState extends State<splashScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
