@@ -16,7 +16,9 @@ class _registrationScreenState extends State<registrationScreen>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body:Stack(
+        
         children: [
           ScreenBackground(context),
           Container(
@@ -29,10 +31,23 @@ class _registrationScreenState extends State<registrationScreen>{
                 SizedBox(height: 20),
                 TextFormField(decoration: AppInputDecoration("Email Address"),),
                 SizedBox(height:20),
-                TextFormField(decoration: AppInputDecoration("Name"),),
+                TextFormField(decoration: AppInputDecoration("First Name"),),
                 SizedBox(height: 20),
-                
-
+                TextFormField(decoration: AppInputDecoration("Last Name"),),
+                SizedBox(height: 20),
+                TextFormField(decoration: AppInputDecoration("Mobile Number"),),
+                SizedBox(height: 20),
+                TextFormField(decoration: AppInputDecoration("Password"),),
+                SizedBox(height: 20),
+                TextFormField(decoration: AppInputDecoration("Confirm Password"),),
+                SizedBox(height: 20),
+                  Container(child:ElevatedButton(
+                  style:AppButtonStyle(),
+                  child:SuccessButtonChild('SignUp'),
+                  onPressed: (){
+                    
+                  },
+                ),)
               ],
             )
           )
