@@ -69,7 +69,6 @@ InputDecoration AppInputDecoration(label){
   );
 }
 
-
 //DropDown Style
 
 DecoratedBox AppDropDownStyle(child){

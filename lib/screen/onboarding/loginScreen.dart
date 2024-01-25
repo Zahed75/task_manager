@@ -35,6 +35,13 @@ class _loginScreenState extends State<loginScreen>{
                 SizedBox(height:20),
                 TextFormField(decoration:AppInputDecoration("Password"),),
                 SizedBox(height:20),
+                Container(child:ElevatedButton(
+                  style:AppButtonStyle(),
+                  child:SuccessButtonChild('Login'),
+                  onPressed: (){
+                    
+                  },
+                ),)
               ],
             )
           )
