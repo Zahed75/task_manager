@@ -26,17 +26,20 @@ class _setPasswordScreenState extends State<setPasswordScreen>{
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Get Started With",style:Head1Text(colorDarkBlue)),
+                Text("Set Password!",style:Head1Text(colorDarkBlue)),
                 SizedBox(height:1),
+
                 Text("Explore with Best Electronics",style:Head6Text(colorLightGray)),
                 SizedBox(height:20),
                 TextFormField(decoration: AppInputDecoration("Email Address"),),
                 SizedBox(height:20),
                 TextFormField(decoration:AppInputDecoration("Password"),),
                 SizedBox(height:20),
+                TextFormField(decoration:AppInputDecoration("Confirm Password"),),
+                SizedBox(height:20),
                 Container(child:ElevatedButton(
                   style:AppButtonStyle(),
-                  child:SuccessButtonChild('Login'),
+                  child:SuccessButtonChild('Confirm'),
                   onPressed: (){
                     
                   },

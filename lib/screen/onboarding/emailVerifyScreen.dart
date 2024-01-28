@@ -35,7 +35,7 @@ class _emailVerifyScreenState extends State<emailVerifyScreen>{
       
                 Container(child:ElevatedButton(
                   style:AppButtonStyle(),
-                  child:SuccessButtonChild('Login'),
+                  child:SuccessButtonChild('Next'),
                   onPressed: (){
                     
                   },

@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       title:"Task Manager",
-      initialRoute:'/emailVerify',
+      initialRoute:'/setPassword',
       routes: {
         '/':(context)=>splashScreen(),
         '/login':(context)=>loginScreen(),
