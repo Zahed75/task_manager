@@ -51,6 +51,25 @@ TextStyle Head6Text(textColor){
 
 
 
+// Pin Verification Style
+
+PinTheme AppOTPStyle(){
+  return PinTheme(
+   inactiveColor:colorLight,
+   inactiveFillColor: colorWhite,
+   selectedColor: colorGreen,
+   activeColor:colorWhite,
+   selectedFillColor: colorGreen,
+   shape:PinCodeFieldShape.box,
+   borderRadius: BorderRadius.circular(5),
+   fieldHeight: 50,
+   borderWidth:0.5,
+   activeFillColor: Colors.white
+  );
+}
+
+
+
 //InputDecoration
 
 InputDecoration AppInputDecoration(label){
@@ -171,3 +190,5 @@ void ErrorToast(msg){
       fontSize: 16.0
   );
 }
+
+
