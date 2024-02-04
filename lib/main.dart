@@ -5,6 +5,11 @@ import 'package:task_manager/screen/onboarding/splashScreen.dart';
 import 'package:task_manager/screen/onboarding/emailVerifyScreen.dart';
 import 'package:task_manager/screen/onboarding/pinVerification.dart';
 import 'package:task_manager/screen/onboarding/setPasswordScreen.dart';
+import 'package:task_manager/screen/task/newTaskListScreen.dart';
+
+
+
+
 
 
 
@@ -27,10 +32,11 @@ class MyApp extends StatelessWidget{
         '/emailVerify':(context)=>emailVerifyScreen(),
         '/pinVerification':(context)=>pinVerificationScreen(),
         '/setPassword':(context)=>setPasswordScreen(),
-       
+        '/newTaskList':(context) => newTaskListScreen(),
       },
 
 
     );
   }
 }
+
